@@ -85,7 +85,7 @@ body {
 
 /* Hero Section */
 .hero {
-    background:url(./images/kris-atomic-3b2tADGAWnU-unsplash.jpg); 
+    background:url('http://127.0.0.1:5500/images/kris-atomic-3b2tADGAWnU-unsplash.jpg'); 
     background-size: cover;
     background-position: center;
     color: white;
