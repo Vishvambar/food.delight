@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Foodie's Delight</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+    <!-- Wrapper for flexbox -->
+    <div class="wrapper">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="container">
+                <h1 class="logo">Foodie's Delight</h1>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="images.html">Images</a></li>
+                        <li><a href="reservations.html">Reservations</a></li>
+                        <li><a href="contact.html" class="active">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="hero">
+            <!-- Contact Section -->
+            <section class="contact">
+                <div class="container">
+
+
+                    <div class="contact-details">
+                        <div class="contact-info">
+                            <h3>Contact Information</h3>
+                            <p>Address: MGM campus chhatrapati Sambhajinagar, 431213</p>
+                            <p>phone: +1 234 567 8900</p>
+                            <p>Email: contact@foodiesdelight.com</p>
+                            <!-- Map Section (Optional) -->
+                            <section class="map">
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120079.78846408453!2d75.2533465758986!3d19.86137762643519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdba2971c4fffff%3A0x47d347b73a8efe3f!2sThe%20SALT%20-%20A%20Multi%20Cuisine%20Restaurant!5e0!3m2!1sen!2sin!4v1726768874023!5m2!1sen!2sin"
+                                        width="600" height="300"     allowfullscreen="" loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </section>
+                        </div>
+
+                        <!-- Contact Form -->
+                        <div class="contact-form">
+                            <h3>Contact Us</h3>
+                            <form action="submit_contact_form.php" method="POST">
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" placeholder="Your Email Address"
+                                        required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea id="message" name="message" rows="5" placeholder="Your Message"
+                                        required></textarea>
+                                </div>
+
+                                <button type="submit" class="btn-submit">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Foodie's Delight | All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+
+</html>

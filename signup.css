@@ -1,0 +1,154 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+body,
+html {
+    height: 100%;
+    background: url(./images/overhead-view-breakfast-with-laptop-candles-black-background.jpg);
+    background-size: cover;
+}
+
+/* Flexbox for body */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Wrapper for content and footer placement */
+.wrapper {
+    flex: 1;
+    /* Pushes the footer down */
+}
+
+/* Header */
+.header {
+    background-color: transparent;
+    color: white;
+    padding: 20px 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1%;
+    margin-right: 3%;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+.nav-links li a.active {
+    color: #ff7f50;
+}
+
+.nav-links li a:hover {
+    text-decoration: underline;
+}
+
+/* Sign Up Section */
+.signup {
+    padding: 50px 20px;
+    text-align: center;
+    /* background-color: #f1f1f1; */
+    flex-grow: 1;
+    /* Allows signup section to stretch and prevent footer from floating */
+}
+
+.signup h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.067);
+
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-right: none;
+    outline: none;
+    border-left: none;
+    font-size: 16px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff7f50;
+    color: white;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #ff6333;
+}
+
+.login-link {
+    margin-top: 20px;
+}
+
+.login-link a {
+    color: #ff7f50;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    flex-shrink: 0;
+    /* Ensures the footer is fixed at the bottom */
+}
+
+.footer p {
+    font-size: 14px;
+}
